@@ -1,0 +1,108 @@
+
+.myLabel {
+  font-size: 16px;
+  font-family: calibri;
+}
+
+.myButton {
+  font-size: 16px;
+  font-family: calibri;
+}
+
+.hitCounter {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: calibri;
+}
+
+.myInput {
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding:  2px;
+  width: 90px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  margin-top: 5px;
+  font-family: calibri;
+}
+
+.myInputCodi {
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding:  2px;
+  width: 45px;
+  height: 20px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  margin-top: 5px;
+  font-family: calibri;
+}
+
+.dropdownFamilia {
+  
+  font-size: 16px;
+  font-family: calibri;
+  padding:  2px;
+}
+
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th {
+  background-color: #f1f1f1;
+  text-align: left;
+  padding: 10px;
+}
+
+#myTable td {
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f9f9f9;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#overlayTable {
+  background-color:  white;
+  border-collapse: collapse;
+  width: 95%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+
+#overlayTable td {
+  text-align: left;
+  vertical-align: top;
+  padding: 8px;
+}
