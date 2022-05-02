@@ -1,4 +1,32 @@
 
+#cabecera {
+  background-color: blue;
+  font-family: calibri;
+  width: 100%;
+}
+
+#titulo {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#version {
+  text-align: left;
+  padding-left: 5px;
+  width: 20%;
+  font-size: 10px;
+  vertical-align: bottom;
+}
+
+#fecha {
+  text-align: right;
+  padding-right: 5px;
+  width: 20%;
+  font-size: 10px;
+  vertical-align: bottom;
+}
+
 .myLabel {
   font-size: 16px;
   font-family: calibri;

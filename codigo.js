@@ -8,19 +8,11 @@ function keyupInput2(){
   buscar();
 }
 
-function keyupDrowDown(){
-  document.getElementById("myInputCodi").value = "";
-  buscar();
-}
 
 function buscar() {
   var input, filter, table, tr, td, i, txtValue, iHits;
 
   iHits = 0;
-
-  inputFamilia = document.getElementById("inputFamilia");
-  filterFamilia = normalice(inputFamilia.selectedOptions[0].value.toUpperCase());
-
   input = document.getElementById("myInput");
   filter = normalice(input.value.toUpperCase());
 
@@ -37,7 +29,6 @@ function buscar() {
   tr = table.getElementsByTagName("tr");
 
   if (filterCodi != "") {
-    document.getElementById("inputFamilia").value = "";
     document.getElementById("myInput").value = "";
     document.getElementById("myInput2").value = "";
 
@@ -71,15 +62,12 @@ function buscar() {
 
     for (i = 0; i < tr.length; i++) {
       td = tr[i].getElementsByTagName("td")[2];
-      tdFamilia = tr[i].getElementsByTagName("td")[0];
       if (td) {
         
         hit = 0;
 
         txtValue = normalice(td.textContent || td.innerText);
-        txtValueFamilia = normalice(tdFamilia.textContent || tdFamilia.innerText);
-        if (txtValueFamilia.toUpperCase().indexOf(filterFamilia) > -1) {
-
+  
           if (filter2 == "") {
             if (txtValue.toUpperCase().indexOf(filter) > -1) {
               hit = 1
@@ -106,9 +94,6 @@ function buscar() {
               }  
             }
           }
-        } else {
-          tr[i].style.display = "none";
-        }
 
         if (hit==1) {
           tr[i].style.display = "";
@@ -116,7 +101,7 @@ function buscar() {
         } else {
           tr[i].style.display = "none";
         }
-      }       
+      }     
     }
   }
   if (iHits == 1) {
@@ -145,8 +130,7 @@ function changeButton(){
 function reset(){
   document.getElementById("button").innerText = "i";
 
-  document.getElementById("inputFamilia").value = "";
-
+  
   document.getElementById("myInput").value = "";
 
   document.getElementById("myInput2").value = "";
@@ -232,4 +216,13 @@ function tableClick(el) {
   document.getElementById("popUpAbits").innerText = td[10].innerText;
   
   document.getElementById("overlay").style.display = "block";
+}
+
+function pageonload() {
+  var version, fecha;
+  version = "0.9"
+  fecha = "23/04/2022"
+  //document.getElementById("version").innerText = "v.0.9"
+  document.getElementById("fecha").innerText = "v." + version + " - " + fecha;
+  esconde();
 }

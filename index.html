@@ -15,7 +15,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 
 </head>
-<body onload="esconde()">
+<body onload="pageonload()">
 
 <div id="overlay" onclick="off()">
   <div id="textOverlay">
@@ -48,7 +48,7 @@
   </div>
 </div>
 
-<label for="familia" class="myLabel">Familia:</label>
+<!--label for="familia" class="myLabel">Familia:</label>
 <select id="inputFamilia" name="familia" onChange="keyupDrowDown()" class="dropdownFamilia"> 
   <option></option>
 <option>Accés motoritzat al medi natural</option>
@@ -66,9 +66,16 @@
 <option>Trànsit</option>
 <option>Vehicles</option>
 <option>Zones forestals</option>
-</select>
+</select-->
 
-<br>
+<table id="cabecera">
+  <tr>
+    <td id="version" style="color:#ffffff"></td>
+    <td id="titulo" style="color:#ffffff">NOMENCLATOR</td>
+    <td id="fecha" style="color:#ffffff"></td>
+  </tr>
+</table>
+
 <label for="input1" class="myLabel">Que contingui:</label>
 <input name="input1" type="text" id="myInput" onkeyup="keyupInput1()" placeholder="paraula.." class="myInput" >
 <button id="button" onClick="changeButton()" class="myButton">i</button>
