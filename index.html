@@ -15,7 +15,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 
 </head>
-<body onload="pageonload()">
+<body onload="pageonload()" style="margin: 0;padding: 0">
 
 <div id="overlay" onclick="off()">
   <div id="textOverlay">
@@ -48,26 +48,6 @@
   </div>
 </div>
 
-<!--label for="familia" class="myLabel">Familia:</label>
-<select id="inputFamilia" name="familia" onChange="keyupDrowDown()" class="dropdownFamilia"> 
-  <option></option>
-<option>Accés motoritzat al medi natural</option>
-<option>Activitats</option>
-<option>Caça</option>
-<option>Convivència</option>
-<option>Espai públic</option>
-<option>Obres</option>
-<option>Paisatge urbà</option>
-<option>Ports i marina mercant</option>
-<option>Protecció seguretat ciutadana</option>
-<option>Reglament Armes</option>
-<option>Reglament pesca</option>
-<option>Sense</option>
-<option>Trànsit</option>
-<option>Vehicles</option>
-<option>Zones forestals</option>
-</select-->
-
 <table id="cabecera">
   <tr>
     <td id="version" style="color:#ffffff"></td>
@@ -76,6 +56,8 @@
   </tr>
 </table>
 
+<div style="margin-left: 5px; margin-right: 5px;">
+  
 <label for="input1" class="myLabel">Que contingui:</label>
 <input name="input1" type="text" id="myInput" onkeyup="keyupInput1()" placeholder="paraula.." class="myInput" >
 <button id="button" onClick="changeButton()" class="myButton">i</button>
@@ -86,6 +68,7 @@
 <table>
   <tr><td><p id="hitCounter" class="hitCounter"></p></td><td><button onClick="reset()" class="myButton">netejar</button></td></tr>
 </table>
+
 
 <table id="myTable">
 <thead><tr><th>FAMILIA</th>
@@ -42313,7 +42296,7 @@
 </tr>
 </tbody></table>
 
-
+</div>
 
 </body>
 </html>
